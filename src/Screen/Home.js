@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setIsDarkMode, toggleDarkMode } from "../Redux/newSlice";
 import ImgUpload from "../Screen/imgupload";
 import LocationTrack from "./LocationTrack";
+import ContactList from "../ContactList";
 export default function Home({ navigation }) {
   const dispatch = useDispatch();
 
@@ -73,6 +74,7 @@ export default function Home({ navigation }) {
         <View>
           <ImgUpload />
           <LocationTrack />
+          <ContactList />
         </View>
       </ScrollView>
     </View>

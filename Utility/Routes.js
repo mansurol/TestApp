@@ -6,4 +6,5 @@ export default {
   Notification: "Notification",
   Profile: "Profile",
   Imgupload: "Imgupload",
+  ContactList: "ContactList",
 };

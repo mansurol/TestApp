@@ -7,6 +7,7 @@ import OnboardingScreen from "../Screen/OnboardingScreen";
 import Notification from "../Screen/Notification";
 import Profile from "../Screen/Profile";
 import imgupload from "../Screen/imgupload";
+import ContactList from "../ContactList";
 
 const Stack = createNativeStackNavigator();
 
@@ -36,6 +37,7 @@ export default function StackNav() {
       <Stack.Screen name={Routes.Notification} component={Notification} />
       <Stack.Screen name={Routes.Profile} component={Profile} />
       <Stack.Screen name={Routes.Imgupload} component={imgupload} />
+      <Stack.Screen name={Routes.ContactList} component={ContactList} />
     </Stack.Navigator>
   );
 }
