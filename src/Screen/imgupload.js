@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { View, Image, Button } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 
-export default function imgupload() {
+export default function ImgUpload() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {

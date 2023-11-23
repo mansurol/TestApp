@@ -52,7 +52,7 @@ export default function Login({ navigation }) {
       }
 
       console.log(" logged in:", userCredential.user);
-      navigation.navigate(Routes.HOME);
+      navigation.navigate(Routes.bottomtab);
     } catch (error) {
       console.error("Login failed:", error);
     }

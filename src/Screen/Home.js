@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import Routes from "../../Utility/Routes";
 import { useDispatch, useSelector } from "react-redux";
 import { setIsDarkMode, toggleDarkMode } from "../Redux/newSlice";
-import ImgUpload from "../Screen/imgupload";
+import ImgUpload from "./ImgUpload";
 import LocationTrack from "./LocationTrack";
 import ContactList from "../ContactList";
 export default function Home({ navigation }) {
@@ -45,7 +45,7 @@ export default function Home({ navigation }) {
             color: isDarkMode ? "white" : "black",
           }}
         >
-          Header Title
+          Task App
         </Text>
 
         {/* Dark Mode Toggle */}
@@ -70,13 +70,7 @@ export default function Home({ navigation }) {
       {/* Your Home Content */}
       <ScrollView
         style={{ padding: 20, backgroundColor: isDarkMode ? "black" : "white" }}
-      >
-        <View>
-          <ImgUpload />
-          <LocationTrack />
-          <ContactList />
-        </View>
-      </ScrollView>
+      ></ScrollView>
     </View>
   );
 }

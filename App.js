@@ -4,6 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import StackNav from "./src/Navigation/StackNav";
 import { Provider } from "react-redux";
 import { store } from "./src/Redux/Store";
+import BottomTab from "./src/Navigation/BottomTab";
 
 export default function App() {
   return (

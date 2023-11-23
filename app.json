@@ -6,7 +6,9 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -27,6 +29,11 @@
     },
     "updates": {
       "url": "https://u.expo.dev/42499332-3250-4fbe-b230-42742c68a51b"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "42499332-3250-4fbe-b230-42742c68a51b"
+      }
     }
   }
 }

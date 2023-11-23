@@ -6,8 +6,10 @@ import Home from "../Screen/Home";
 import OnboardingScreen from "../Screen/OnboardingScreen";
 import Notification from "../Screen/Notification";
 import Profile from "../Screen/Profile";
-import imgupload from "../Screen/imgupload";
+import imgupload from "../Screen/ImgUpload";
 import ContactList from "../ContactList";
+import LocationTracking from "../Screen/LocationTrack";
+import BottomTab from "./BottomTab";
 
 const Stack = createNativeStackNavigator();
 
@@ -38,6 +40,12 @@ export default function StackNav() {
       <Stack.Screen name={Routes.Profile} component={Profile} />
       <Stack.Screen name={Routes.Imgupload} component={imgupload} />
       <Stack.Screen name={Routes.ContactList} component={ContactList} />
+      <Stack.Screen name={Routes.Locationtack} component={LocationTracking} />
+      <Stack.Screen
+        name={Routes.bottomtab}
+        component={BottomTab}
+        options={{ headerShown: false }}
+      />
     </Stack.Navigator>
   );
 }

@@ -5,6 +5,8 @@ export default {
   ONBOARDING: "ONBOARDING",
   Notification: "Notification",
   Profile: "Profile",
-  Imgupload: "Imgupload",
-  ContactList: "ContactList",
+  Imgupload: "Img upload",
+  ContactList: "Contact List",
+  Locationtack: " Location",
+  bottomtab: "bottomtab",
 };
