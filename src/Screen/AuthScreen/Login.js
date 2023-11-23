@@ -9,7 +9,7 @@ import {
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import Routes from "../../../Utility/Routes";
-
+import AsyncStorage from "@react-native-async-storage/async-storage";
 const firebaseConfig = {
   apiKey: "AIzaSyAPRFyxIwb3vsVZ5ukPsm6t2QnR_QAS13c",
   authDomain: "app-test-847ea.firebaseapp.com",
@@ -39,11 +39,22 @@ export default function Login({ navigation }) {
         email,
         password
       );
-      console.log("User logged in:", userCredential.user);
+
+      const userData = {
+        email: email,
+      };
+      console.log("userData", userData);
+      try {
+        await AsyncStorage.setItem("userData", JSON.stringify(userData));
+        console.log("Login data stored in AsyncStorage");
+      } catch (error) {
+        console.error("Error storing login data:", error);
+      }
+
+      console.log(" logged in:", userCredential.user);
       navigation.navigate(Routes.HOME);
     } catch (error) {
       console.error("Login failed:", error);
-      // Handle login failure (e.g., show error message)
     }
   };
 
